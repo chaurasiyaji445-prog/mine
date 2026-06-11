@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Happy Birthday My Love ❤️</title>
 
 <style>
@@ -66,12 +66,6 @@ body::after{
     object-fit:cover;
     border:6px solid white;
     box-shadow:0 0 30px white;
-    animation:zoom 3s infinite alternate;
-}
-
-@keyframes zoom{
-    from{transform:scale(1);}
-    to{transform:scale(1.05);}
 }
 
 h1{
@@ -582,7 +576,7 @@ function createHeart(){
 
     setTimeout(()=>{
     heart.remove();
-    },4000);
+    },3000);
 
 }
 function openImage(src){
@@ -634,7 +628,7 @@ function closeImage(){
     document.getElementById("imageViewer").style.display = "none";
 }
 
-setInterval(createHeart,1000);
+setInterval(createHeart,1500);
 
 </script>
 
