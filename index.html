@@ -120,6 +120,8 @@ button:hover{
     box-shadow:0 0 30px rgba(0,0,0,.3);
 
     scrollbar-width:none;
+    transform:none !important;
+    zoom:1 !important;
 }
 
 .popup::-webkit-scrollbar{
@@ -322,6 +324,15 @@ button:hover{
 </style>
 </head>
 <div id="imageViewer" class="image-viewer">
+
+    <button class="nav-btn left-btn"
+            onclick="prevImage()">⬅</button>
+
+    <img id="fullImage">
+
+    <button class="nav-btn right-btn"
+            onclick="nextImage()">➡</button>
+
     <button class="back-btn"
             onclick="closeImage()">⬅ Back</button>
 
@@ -619,7 +630,7 @@ function closeImage(){
     document.getElementById("imageViewer").style.display = "none";
 }
 
-setInterval(createHeart,1500);
+//setInterval(createHeart,1500);
 
 </script>
 
